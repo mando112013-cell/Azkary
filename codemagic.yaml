@@ -1,0 +1,10 @@
+
+workflows:
+  android-workflow:
+    name: Tasabeeh APK Build
+    environment:
+      java: 17
+    scripts:
+      - echo "Configure Gradle wrapper before build"
+    artifacts:
+      - app/build/outputs/**/*.apk
